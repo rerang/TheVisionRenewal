@@ -1,6 +1,6 @@
 <template>
     <div>
-        login
+        login yuna
     </div>
     </template>
     
