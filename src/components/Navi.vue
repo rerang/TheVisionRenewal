@@ -27,13 +27,15 @@
     @import url('https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&display=swap');
 
     .navContainer{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
         background-color: rgba(0, 0, 0, 0);
         height: 7rem;
-        font-size: 3rem;
+        font-size: 2.5rem;
         z-index: 3;
-        padding: 1rem 2rem 0;
+        padding: 1rem 3rem 0;
+        position: fixed;
     }
     .logoArea{
     }
@@ -41,12 +43,12 @@
         width: 10rem;
     }
     .menuArea{
-        display: grid;
-        grid-template-columns: 6fr 1fr;
+        display: flex;
+        column-gap: 55px;
     }
     .menuLinkArea{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        display: flex;
+        column-gap: 35px;
         justify-items: center;
         align-items: center;
     }
@@ -65,7 +67,7 @@
         align-items: center;
     }
     .menuImg{
-        width: 3.5rem;
-        height: 3.5rem;
+        width: 35px;
+        height: 35px;
     }
 </style>

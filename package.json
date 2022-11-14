@@ -22,7 +22,8 @@
   "homepage": "https://github.com/rerang/TheVisionRenewal#readme",
   "dependencies": {
     "file-loader": "^6.2.0",
-    "sass": "^1.54.8",
+    "sass": "^1.56.1",
+    "sass-loader": "^13.2.0",
     "vue": "^3.2.36",
     "vue-router": "^4.0.13"
   },

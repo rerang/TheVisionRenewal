@@ -1,9 +1,8 @@
 <template>
 <div>
     <div class="pagesContainer">
-        <div class="mainBackgroundArea">
-            <img class="mainBackgroundImg" src="../assets/img/flying_bird.png">
-        </div>
+        <img class="mainBackgroundImg" src="../assets/img/flying_bird.png">
+        
         <div class="sloganArea">
             <div class="slogan_left">Be Competitive,</div>
             <div class="slogan_right">Move Forward</div>
@@ -19,18 +18,7 @@
     }
     window.addEventListener("scroll", moveSlogan);
 
-//     $(".box").on('mousewheel',function(e){
-// var wheel = e.originalEvent.wheelDelta;
 
-// //스크롤값을 가져온다.
-// if(wheel>0){
-// //스크롤 올릴때
-// $("p.result").html("올림..");
-// } else {
-// //스크롤 내릴때
-// $("p.result").html("내림..");
-// }
-// });
 </script>
     
 <style>
@@ -39,17 +27,17 @@
         src: url('../assets/fonts/HeyAugust.otf');
     }
     .pagesContainer{
+        width: 100vw;
+        padding: 8rem 0 0;
         display: flex;
         flex-direction: row;
         justify-content: center;                                         
         align-items: center;
-        min-height: calc(100vh - 8rem);
-    }
-    .mainBackgroundArea{
-        position: absolute;
+        min-height: 100vh;
+        background: radial-gradient(circle, #E4F6FE,   #54B7DB);
     }
     .mainBackgroundImg{
-        height: min(100vh, 70rem);
+        display: none;
     }
     .sloganArea{
         font-family: 'HeyAugust';

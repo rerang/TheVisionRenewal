@@ -3,6 +3,7 @@ import { createWebHistory, createRouter } from "vue-router";
 
 import Main from '../pages/Main.vue';
 import Activity from '../pages/Activity.vue';
+import ActivityDetial from '../pages/ActivityDetial.vue';
 import Apply from '../pages/Apply.vue';
 import Login from '../pages/Login.vue';
 
@@ -23,6 +24,10 @@ const routes = [{
         path: '/login',
         name: "Login",
         component: Login
+    }, {
+        path: '/activitydetail',
+        name: "ActivityDetail",
+        component: ActivityDetial
     }
 ];
 
