@@ -1,6 +1,5 @@
 <template>
     <div id="join_form">
-        <!-- v-bind:style="{ 'background-image': url("/assets/images/background.png")}"  -->
         <h1>동아리 지원서</h1>
         <br>
         <form name="Application" method="post">
