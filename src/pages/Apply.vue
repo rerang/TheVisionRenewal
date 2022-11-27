@@ -1,25 +1,26 @@
 <template>
-    <div id="join_form">
+    <div class="join_form">
+        <!-- v-bind:style="{ 'background-image': url("/assets/images/background.png")}"  -->
         <h1>동아리 지원서</h1>
         <br>
         <form name="Application" method="post">
             <label for="name" style="margin:18px">이름 </label>
-            <input type="text" id="name">
+            <input type="text" id="name" v-model="name">
             <br><br>
             <label for="st_num" style="margin:18px">학번 </label>
-            <input type="text" id="st_num">
+            <input type="text" id="st_num" v-model="st_num">
             <br><br>
             <label for="ph_num" style="margin:3px">전화번호 </label>
-            <input type="text" id="ph_num" placeholder=" - 없이 입력">
+            <input type="text" id="ph_num" v-model="ph_num" placeholder=" - 없이 입력">
             <br><br>
             <label for="field" style="margin:18px">분야 </label>
-            <input type="text" id="field">
+            <input type="text" id="field" v-model="field">
             <br><br>
             <label for="dep" style="margin:18px">학과 </label>
-            <input type="text" id="dep">
+            <input type="text" id="dep" v-model="dep">
             <br><br>
             <label for="pass" style="margin:3px">비밀번호 </label>
-            <input type="password" id="pass" placeholder="영문자+숫자+특수문자 조합">
+            <input type="password" id="pass" v-model="pass" placeholder="영문자+숫자+특수문자 조합">
             <br><br><br><br>
         </form>
         <div id="join_btn" class="frame">
@@ -91,7 +92,7 @@
             return false;
         }
 
-        if(ph_Num.value.match(Tel_check) == null || getDigit(ph_Num.value) != 11){
+        if(ph_Num.value.match(Tel_check) == null){
             alert("전화번호를 다시 입력하세요.");
             ph_Num.focus();
             return false;
@@ -129,8 +130,6 @@
             return false;
         }
 
-
-
         // 숫자 자릿수 판별
         function getDigit(num) {
             num = num.toString();
@@ -138,8 +137,6 @@
             while(num[i]) { i++; };
                 return i;
         }  
-        
-        //document.Application.submit();
 
         axios.post('https://jsonplaceholder.typicode.com/users/', 
             {
@@ -191,7 +188,7 @@
         color: rgb(67, 88, 107);
     }
 
-    #join_form {
+    .join_form {
         background-color: white;
         width: 800px;
         height: auto;
@@ -311,7 +308,8 @@
             font-size: 17px;
             margin: 0 0 3px 15px;
             width: 170px;
-            
+            padding-left: 10px;
+            outline: none;
         }
 
 </style>
