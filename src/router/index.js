@@ -6,7 +6,6 @@ import Activity from '../pages/Activity.vue';
 import ActivityDetial from '../pages/ActivityDetial.vue';
 import Apply from '../pages/Apply.vue';
 import Login from '../pages/Login.vue';
-import LoginSuccess from '../pages/LoginSuccess.vue';
 
 const routes = [{
         path: '/', 
@@ -29,10 +28,6 @@ const routes = [{
         path: '/activitydetail',
         name: "ActivityDetail",
         component: ActivityDetial
-    }, {
-        path: '/loginsuccess',
-        name: "LoginSuccess",
-        component: LoginSuccess
     }
 ];
 
