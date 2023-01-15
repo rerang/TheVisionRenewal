@@ -2,6 +2,7 @@
     <div class="LoginForm">
         <h1>로그인</h1>
         <br>
+<<<<<<< HEAD
         <form name="Login" class="Login">
             <label for="st_num" style="margin:18px">학번 </label>
             <input type="text" class="st_num" v-model="st_num">
@@ -13,6 +14,17 @@
         <div class="frame join_btn">
             <button class="custom-btn btn" @click="LoginSubmit()"><span>로그인</span></button>
         </div>
+=======
+        <form name="Login">
+            <label for="st_num" style="margin:18px">학번 </label>
+            <input type="text" id="st_num" v-model="st_num">
+            <br><br>
+            <label for="pass" style="margin:3px">비밀번호 </label>
+            <input type="password" id="pass" v-model="pass">
+        </form>
+        <br><br>
+        <button id="submit" @click="LoginSubmit()">로그인</button>
+>>>>>>> 0c94b16f3287bd5e989c915498aa2970d655871d
     </div>
     
 </template>
@@ -21,6 +33,7 @@
     
     /* eslint-disable */
     
+<<<<<<< HEAD
     import router from '@/router';
     import axios from 'axios'
     import {ref} from 'vue';
@@ -37,6 +50,20 @@
             {
                 st_num: st_num.value,
                 pass: pass.value  
+=======
+    import axios from 'axios'
+    axios.defaults.withCredentials = true;
+
+    function LoginSubmit() {
+
+        var st_Num = document.getElementById("st_num");
+        var Pass = document.getElementById("pass");
+
+        axios.post('https://jsonplaceholder.typicode.com/users/', 
+            {
+                st_num: st_Num.value,
+                pass: Pass.value  
+>>>>>>> 0c94b16f3287bd5e989c915498aa2970d655871d
             }
             )
             .then(function (response) {
@@ -64,15 +91,20 @@
         }
         else{
             alert("Login faill!");
+<<<<<<< HEAD
         }
         
         router.push('/loginsuccess');
+=======
+        }        
+>>>>>>> 0c94b16f3287bd5e989c915498aa2970d655871d
 
     }
 
 </script>
 
 <style>
+<<<<<<< HEAD
     @font-face {
         font-family: 'HallymGothic-Regular';
         src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2204@1.0/HallymGothic-Regular.woff2') format('woff2');
@@ -216,4 +248,7 @@
         width: 170px;
             
     }
+=======
+
+>>>>>>> 0c94b16f3287bd5e989c915498aa2970d655871d
 </style>
