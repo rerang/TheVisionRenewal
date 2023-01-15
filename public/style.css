@@ -67,3 +67,11 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video{
 	box-sizing: border-box;
 }
+
+body{
+	-ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+	display: none;
+}

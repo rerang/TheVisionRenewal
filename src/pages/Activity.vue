@@ -134,14 +134,14 @@
                     outline: none;
                 }
             }
-            .activityContentDisplaySelectArea{
-                display: flex;
-                column-gap: 10px;
+            // .activityContentDisplaySelectArea{
+            //     display: flex;
+            //     column-gap: 10px;
                 
-                .activityContentDisplaySelect{
+            //     .activityContentDisplaySelect{
 
-                }
-            }
+            //     }
+            // }
         }
         .activityContentSearchResultArea{
             display: flex;
