@@ -66,7 +66,7 @@
             alert("Login faill!");
         }
         
-        router.push('/LoginSuccess');
+        router.push('/loginsuccess');
 
     }
 
