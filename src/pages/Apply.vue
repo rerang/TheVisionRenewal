@@ -150,13 +150,6 @@
         font-weight: normal;
         font-style: normal;
     }
-    body {
-        height: 100vh;
-        background-image: url("C:\학교\동아리\효진\TheVisionRenewal\src\assets\img\background.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
     h1 {
         font-size: 50px;
         font-family: 'SEBANG_Gothic_Bold';
