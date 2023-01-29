@@ -151,11 +151,6 @@
         font-style: normal;
     }
 
-    h1 {
-
-        /* font-size: 50px;
-
-    }
     .joinContainer{
         display: flex;
         justify-content: center;
@@ -166,24 +161,24 @@
 
         font-family: 'SEBANG_Gothic_Bold';
         margin: 10px 0 30px 0;
-        color: rgb(67, 88, 107); */
+        color: rgb(67, 88, 107);
     }
     .join_form {
 
         /* background-color: white; */
 
-        /* width: auto;
+        width: auto;
 
-        /width: auto;
-        /height: auto;
-        /font-family: 'HallymGothic-Regular';
-        /font-size: 17px;
-        /margin-left: auto;
-        /margin-right: auto;
-        /margin-bottom: auto;
-        /margin-top: auto;
-        /text-align: center;
-        /padding: 160px 50px 50px 50px;
+        /* width: auto;
+        height: auto;
+        font-family: 'HallymGothic-Regular';
+        font-size: 17px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: auto;
+        margin-top: auto;
+        text-align: center;
+        padding: 160px 50px 50px 50px; */
 
         background: white;
         width: 800px;
@@ -194,7 +189,7 @@
         text-align: center;
 
         padding: 160px 50px 50px 50px;
-        color: rgb(16, 27, 48); */
+        color: rgb(16, 27, 48);
 
         padding: 3rem;
 
