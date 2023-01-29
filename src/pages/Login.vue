@@ -31,8 +31,6 @@
 
     function LoginSubmit() {
 
-        
-
         axios.post('https://jsonplaceholder.typicode.com/users/', 
             {
                 st_num: st_num.value,
