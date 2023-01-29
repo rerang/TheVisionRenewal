@@ -1,5 +1,5 @@
 <template>
-<div>
+<div class="mainContainer">
     <div class="pagesContainer">
         <div class="sloganContainer">
             <img class="mainBackgroundImg" src="../assets/img/flying_bird.png">
@@ -38,8 +38,8 @@
     let direction = ref(0);
 
     const getDirection = (event) => {
+        if(window.location.pathname == "/main")
         window.scrollTo(0, 0);
-        console.log(event);
         direction.value = event.deltaY > 0 ? 1 : -1; //1: down, -1: up
         moveSlogan();
     }
@@ -76,12 +76,11 @@
         width: 100vw;
         height: 100vh;
         overflow: hidden;
-        padding: 8rem 0 0;
+        padding: 0;
         display: flex;
         flex-direction: row;
         justify-content: center;                                         
         align-items: center;
-        background: radial-gradient(circle, #E4F6FE,   #54B7DB);
     }
     .sloganContainer{
         width: 100vw;
