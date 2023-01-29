@@ -150,13 +150,6 @@
         font-weight: normal;
         font-style: normal;
     }
-    body {
-        height: 100vh;
-        background-image: url("C:\학교\동아리\효진\TheVisionRenewal\src\assets\img\background.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
     h1 {
         font-size: 50px;
         font-family: 'SEBANG_Gothic_Bold';
@@ -164,17 +157,17 @@
         color: rgb(67, 88, 107);
     }
     .join_form {
-        background-color: white;
-        width: 800px;
+        /* background-color: white; */
+        width: auto;
         height: auto;
         font-family: 'HallymGothic-Regular';
         font-size: 17px;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 70px;
-        margin-top: 70px;
+        margin-bottom: auto;
+        margin-top: auto;
         text-align: center;
-        padding: 50px 50px 50px 50px;
+        padding: 160px 50px 50px 50px;
         color: rgb(16, 27, 48);
     }
     .frame {
