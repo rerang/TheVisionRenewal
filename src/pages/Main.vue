@@ -56,9 +56,9 @@
             sloganLeftVal.value -= sloganMoveVW;
             sloganRightVal.value += sloganMoveVW;
         }
-        if(25~30){
-            새 만들기
-        }
+        // if(25~30){
+        //     새 만들기
+        // }
 
     }
 
