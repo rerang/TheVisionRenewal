@@ -118,7 +118,7 @@
         }  
 
         //document.Application.submit();
-        axios.post('https://jsonplaceholder.typicode.com/users/', 
+        axios.post('http://3.39.153.21:8000/thevision/', 
             {
                 name: name.value,
                 st_num: st_num.value,
@@ -152,7 +152,7 @@
     }
     body {
         height: 100vh;
-        background-image: url("C:\학교\동아리\thevision\src\assets\images\background.jpg");
+        background-image: url("C:\학교\동아리\효진\TheVisionRenewal\src\assets\img\background.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
