@@ -1,7 +1,7 @@
 <template>
     <div class="LoginForm">
         <h1>로그인</h1>
-        <br>
+        <br><br>
         <form name="Login" class="Login">
             <label for="st_num" style="margin:18px">학번 </label>
             <input type="text" class="st_num" v-model="st_num">
@@ -9,7 +9,7 @@
             <label for="pass" style="margin:3px">비밀번호 </label>
             <input type="password" class="pass" v-model="pass">
         </form>
-        <br><br>
+        <br><br><br><br>
         <div class="frame join_btn">
             <button class="custom-btn btn" @click="LoginSubmit()"><span>로그인</span></button>
         </div>
@@ -90,17 +90,17 @@
         color: rgb(67, 88, 107);
     }
     .LoginForm {
-        background-color: white;
-        width: 600px;
-        height: 300px;
+        /* background-color: white; */
+        width: auto;
+        height: auto;
         font-family: 'HallymGothic-Regular';
         font-size: 17px;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 70px;
-        margin-top: 70px;
+        margin-bottom: auto;
+        margin-top: auto;
         text-align: center;
-        padding: 50px 50px 50px 50px;
+        padding: 160px 50px 50px 50px;
         color: rgb(16, 27, 48);
     }
     .frame {
