@@ -81,7 +81,7 @@
 
 <style lang="scss">
     .activityContainer{
-        padding: 9rem 0 4rem;
+        padding: 0 0 4rem;
         display: flex;
         flex-direction: column;
         align-items: center;
