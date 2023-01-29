@@ -14,5 +14,6 @@
     .pages{
         background: radial-gradient(circle, #E4F6FE,   #54B7DB);
         min-height: 100vh;
+        padding: 9rem 0 5rem;
     }
 </style>

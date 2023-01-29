@@ -1,6 +1,7 @@
 <template>
+<div class="joinContainer">
     <div class="join_form">
-        <h1>동아리 지원서</h1>
+        <div class="join_title">동아리 지원서</div>
         <br>
         <form name="Application" method="post">
             <label for="name" style="margin:18px">이름 </label>
@@ -26,11 +27,10 @@
             <button class="custom-btn btn" type="button" id="submit" @click="joinform_check();"><span>가입하기</span></button>
         </div>       
     </div>
-    
+</div>
 </template>
 
 <script setup>
-    
     /* eslint-disable */
     
     import axios from 'axios'
@@ -150,13 +150,22 @@
         font-weight: normal;
         font-style: normal;
     }
+
     h1 {
+
+    .joinContainer{
+        display: flex;
+        justify-content: center;
+    }
+    .join_title {
+
         font-size: 50px;
         font-family: 'SEBANG_Gothic_Bold';
         margin: 10px 0 30px 0;
         color: rgb(67, 88, 107);
     }
     .join_form {
+
         /* background-color: white; */
         width: auto;
         height: auto;
@@ -168,6 +177,15 @@
         margin-top: auto;
         text-align: center;
         padding: 160px 50px 50px 50px;
+
+        background: white;
+        width: 800px;
+        height: auto;
+        font-family: 'HallymGothic-Regular';
+        font-size: 17px;
+        text-align: center;
+        padding: 3rem;
+
         color: rgb(16, 27, 48);
     }
     .frame {
