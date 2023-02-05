@@ -9,14 +9,11 @@
 <script setup>
     import { ref } from 'vue';
     import Navi from './components/Navi.vue';
-    import AdminNavi from './components/AdminNavi.vue';
 
 
     let naviComponent = ref(Navi)
-    if(window.location.pathname !== "/Admin"){
+    if(window.location.pathname == "/Main"){
         naviComponent = Navi;
-    }else{
-        naviComponent = AdminNavi;
     }
 </script>
 

@@ -7,6 +7,8 @@ import ActivityDetial from '../pages/ActivityDetial.vue';
 import Apply from '../pages/Apply.vue';
 import Login from '../pages/Login.vue';
 import LoginSuccess from '../pages/LoginSuccess.vue';
+import ManageMember from '../pages/Admin/ManageMember.vue';
+
 
 const routes = [{
         path: '/', 
@@ -33,6 +35,14 @@ const routes = [{
         path: '/loginsuccess',
         name: "LoginSuccess",
         component: LoginSuccess
+    }, {
+        path: '/Admin',
+        name: "AdminManageMember",
+        component: ManageMember
+    }, {
+        path: '/Admin/ManageMember',
+        name: "AdminManageMember",
+        component: ManageMember
     }
 ];
 
