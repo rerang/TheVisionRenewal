@@ -8,9 +8,9 @@
                 Admin
             </div>
             <div class="AdminNavMenuArea">
-                <router-link class="AdminNavMenu">지원자 관리</router-link>
-                <router-link class="AdminNavMenu">멤버관리</router-link>
-                <router-link class="AdminNavMenu">활동관리</router-link>
+                <router-link class="AdminNavMenu" to="/Admin/ManageApplier">지원자 관리</router-link>
+                <router-link class="AdminNavMenu" to="/Admin/ManageMember">멤버관리</router-link>
+                <router-link class="AdminNavMenu" to="/Admin/ManageActivity">활동관리</router-link>
             </div>
         </div>
     </div>

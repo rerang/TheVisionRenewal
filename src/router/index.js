@@ -8,6 +8,7 @@ import Apply from '../pages/Apply.vue';
 import Login from '../pages/Login.vue';
 import LoginSuccess from '../pages/LoginSuccess.vue';
 import ManageMember from '../pages/Admin/ManageMember.vue';
+import ManageActivity from '../pages/Admin/ManageActivity.vue';
 
 
 const routes = [{
@@ -43,6 +44,14 @@ const routes = [{
         path: '/Admin/ManageMember',
         name: "AdminManageMember",
         component: ManageMember
+    }, {
+        path: '/Admin/ManageApplier',
+        name: "AdminManageApplier",
+        component: ManageMember
+    }, {
+        path: '/Admin/ManageActivity',
+        name: "AdminManageActivity",
+        component: ManageActivity
     }
 ];
 
